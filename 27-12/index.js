@@ -53,3 +53,60 @@
 //   },
 // });
 // console.log(arr[1]);
+
+// let numbers = [];
+
+// numbers = new Proxy(numbers, {
+//   set(target, prop, val) {
+//     if (typeof val == "number") {
+//       target[prop] = val;
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   },
+// });
+
+// numbers.push(1);
+// numbers.push(2);
+// numbers.push("2");
+// console.log(numbers);
+
+// let user = {
+//   name: "John",
+//   age: 30,
+//   _password: "***",
+// };
+
+// user = new Proxy(user, {
+//   ownKeys(target) {
+//     return Object.keys(target).filter((key) => !key.startsWith("_"));
+//   },
+// });
+
+// for (let key in user) console.log(key);
+
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+
+// let range = {
+//   start: 1,
+//   end: 10,
+// };
+
+// range = new Proxy(range, {
+//   has(target, prop) {
+//     return prop >= target.start && prop <= target.end;
+//     // 7 >= 1 && 7 <= 10
+//   },
+// });
+
+// console.log(7 in range); // true
+// console.log(50 in range); // false
+
+// let user = {};
+
+// Reflect.set(user, "name", "John");
+// Reflect.set(user, "surname", "Doe");
+
+// console.log(Reflect.get(user, "surname"));
