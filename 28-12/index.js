@@ -1,27 +1,34 @@
-// function sayHi() {
-//   console.log("Hello");
+// alert("Warning");
+// confirm("18 yoshdan oshganmisiz?");
+// if (confirm("Xabarlar saytiga o'tish")) {
+//   location.href = "https://kun.uz";
+// }
+// alert(window.innerWidth);
+// alert(window.innerHeight);
+
+// document.body.style.background = "red";
+
+// {
+//   wrap: {
+//     div:
+//   };
 // }
 
-// window.sayHi();
+// const elId = document.getElementById("wrapId");
+// console.log(elId);
+// console.log(wrapId);
+// console.log(document.getElementsByClassName("wrapClass"));
+// console.log(document.getElementsByTagName("div")[0]);
 
-// console.log(window.innerHeight); // inner window height
-// console.log(window.innerWidth); // inner window width
+// const universalKey = document.querySelector("div");
+// console.log(universalKey);
+// const universalKey = document.querySelectorAll("div")[0];
+// console.log(universalKey);
 
-// document.body.style.backgroundColor = "black";
-// console.log(document.documentElement);
-// console.log(document.head);
-// console.log(document.body);
+// const wrap = document.querySelector(".wrapClass");
+// console.log(wrap);
+// console.log((wrap.textContent = "Boshqa text"));
+// console.log((wrap.innerHTML = "<p>Boshqa text</p>"));
 
-// const id = document.getElementById("id");
-// const class1 = document.getElementsByClassName("class");
-// const attr = document.getElementsByTagName("span");
-// const name = document.getElementsByName("name");
-// console.log(id, class1, attr, name);
-
-// const getClass = document.querySelector(".class");
-// const getId = document.querySelector("#id");
-// const getTag = document.querySelector("span");
-// const getDiv = document.querySelectorAll("div");
-// // console.log(getClass, getId, getTag);
-// let txt = getClass.textContent("bb");
-// console.log(txt);
+// const title = document.querySelector("h1");
+// title.hidden = false; // display none
